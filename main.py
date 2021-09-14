@@ -17,6 +17,7 @@ def is_valid(r, c, tr, tc):
     return (r >= 0) and (r < tr) and (c >= 0) and (c < tc)
 
 
+# Shortest path in a binary maze where 1 represents obstacle
 def shortest_path(maze, src, dest, r, c):
     if maze[src.x][src.y] != 0 or maze[dest.x][dest.y] != 0:
         return -1
